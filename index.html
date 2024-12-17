@@ -3,16 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Time Tracking Dashboard</title>
   </head>
@@ -25,15 +17,139 @@
             src="images/image-jeremy.png"
             alt="person-image"
           />
-          <p>Report for</p>
-          <p>Jeremy Robson</p>
+          <p class="sub-text">Report for</p>
+          <p class="person-name">Jeremy Robson</p>
+        </div>
+        <div class="time-selectors-container">
+          <p class="time-selectors-item">Daily</p>
+          <p class="time-selectors-item">Weekly</p>
+          <p class="time-selectors-item">Monthly</p>
         </div>
       </div>
-      <div class="timeline-selection-container">
-        <button>Daily</button>
-        <button>Weekly</button>
-        <button>Monthly</button>
+
+      <div class="time-trackers-container">
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-work.svg"
+              alt="icon-work"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-play.svg"
+              alt="icon-play"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-study.svg"
+              alt="icon-study"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-exercise.svg"
+              alt="icon-exercise"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-social.svg"
+              alt="icon-social"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="tracker-item-container">
+          <div class="tracker-image-container">
+            <img
+              class="tracker-image"
+              src="images/icon-self-care.svg"
+              alt="icon-self-care"
+            />
+          </div>
+          <div class="tracker-info-container">
+            <div class="tracker-top">
+              <p>Work</p>
+              <p>...</p>
+            </div>
+            <div class="tracker-middle">32hours</div>
+            <div class="tracker-bottom">
+              <p>Last Week -</p>
+              <p>10 hours</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

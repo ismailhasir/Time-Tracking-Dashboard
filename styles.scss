@@ -15,7 +15,7 @@
   --Blue: hsl(246, 80%, 60%);
   --Light-Red: hsl(15, 100%, 70%); //work
   --Soft-Blue: hsl(195, 74%, 62%); //play
-  --Light-Red: hsl(348, 100%, 68%); //study
+  --Light-Red-Study: hsl(348, 100%, 68%); //study
   --Lime-Green: hsl(145, 58%, 55%); //exercise
   --Violet: hsl(264, 64%, 52%); //social
   --Soft-Orange: hsl(43, 84%, 65%); //self care
@@ -34,9 +34,102 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
+  background-color: var(--Very-Dark-Blue);
+  // color: white;
 }
 
 .main-container {
-  border: 3px solid red;
+  height: 518px;
+  width: 1000px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  .person-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: var(--Dark-Blue);
+
+    .person-info-container {
+      min-width: 255px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--Blue);
+      color: white;
+      border-radius: 1rem;
+      flex: 2;
+      padding: 1.5rem;
+
+      .person-image {
+        height: 78px;
+        width: 78px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+      }
+
+      .sub-text {
+        font-size: 15px;
+        color: #bbc0ff;
+      }
+
+      .person-name {
+        font-size: 40px;
+      }
+    }
+
+    .time-selectors-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 1.5rem;
+      color: #7078c9;
+
+      .time-selectors-item:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .time-trackers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 1rem;
+    border: 1px solid white;
+    .tracker-item-container {
+      max-width: 220px;
+      max-height: 220px;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      background-color: var(--Light-Red);
+
+      .tracker-image-container {
+        display: flex;
+        justify-content: end;
+        padding-right: 1rem;
+        border-radius: 1rem 1rem 0 0;
+
+        .tracker-image {
+          height: 40px;
+          width: 40px;
+          object-fit: contain;
+        }
+      }
+
+      .tracker-info-container {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--Dark-Blue);
+        color: white;
+      }
+    }
+  }
 }
