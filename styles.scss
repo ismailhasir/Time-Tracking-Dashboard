@@ -98,37 +98,36 @@ body {
   }
 
   .time-trackers-container {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
     border: 1px solid white;
+    width: 1000px;
+
     .tracker-item-container {
-      max-width: 220px;
-      max-height: 220px;
-      margin-bottom: 1rem;
-      border-radius: 1rem;
       background-color: var(--Light-Red);
+      border: 2px solid gray;
+      border-radius: 8px;
 
       .tracker-image-container {
         display: flex;
         justify-content: end;
-        padding-right: 1rem;
-        border-radius: 1rem 1rem 0 0;
+        padding-right: 1.2rem;
+        flex: 1;
 
         .tracker-image {
-          height: 40px;
-          width: 40px;
-          object-fit: contain;
+          // height: 40px;
+          // width: 40px;
+          // object-fit: contain;
         }
       }
 
       .tracker-info-container {
-        padding: 1rem;
-        border-radius: 1rem;
+        flex: 4;
         background-color: var(--Dark-Blue);
-        color: white;
       }
     }
   }
